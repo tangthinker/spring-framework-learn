@@ -8,15 +8,20 @@
  */
 package work.tangthinker.bean;
 
+import lombok.Data;
+
 /**
  * @author Jon Snow
  * @since 2023/6/25 18:42
  * ClassPath: work.tangthinker.bean.Person
  * Description:
  */
+@Data
 public class Person {
 
+    private String name;
 
+    private Integer age;
 
 
 

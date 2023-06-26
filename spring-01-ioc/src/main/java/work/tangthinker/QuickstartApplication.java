@@ -24,7 +24,14 @@ public class QuickstartApplication {
     public static void main(String[] args) {
         BeanFactory beanFactory = new ClassPathXmlApplicationContext("basic_dl/quickstart_byname.xml");
         Person person = (Person) beanFactory.getBean("person");
-        System.out.println(person);
+        Person person_type_1 = beanFactory.getBean(Person.class);
+        System.out.println("Create bean by type-beanFactory_1: " + person_type_1);
+        System.out.println("Create bean by name: " + person);
+
+        BeanFactory beanFactory_type = new ClassPathXmlApplicationContext("basic_dl/quickstart-bytype.xml");
+        Person person_type = beanFactory_type.getBean(Person.class);
+        System.out.println("Create bean by type:" + person_type);
+
     }
 
 
