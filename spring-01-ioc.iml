@@ -8,6 +8,8 @@
           <file>file://$MODULE_DIR$/spring-01-ioc/src/main/resources/basic_dl/quickstart-bytype.xml</file>
           <file>file://$MODULE_DIR$/spring-01-ioc/src/main/resources/basic_di/inject-set.xml</file>
           <file>file://$MODULE_DIR$/spring-01-ioc/src/main/resources/basic_di/of-type.xml</file>
+          <file>file://$MODULE_DIR$/spring-01-ioc/src/main/resources/basic_dl/with-annotation.xml</file>
+          <file>file://$MODULE_DIR$/spring-01-ioc/src/main/resources/basic_dl/of-type.xml</file>
         </fileset>
       </configuration>
     </facet>

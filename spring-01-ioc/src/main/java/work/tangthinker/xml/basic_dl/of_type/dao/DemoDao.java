@@ -5,7 +5,7 @@
  * Email: shanliao420@yeah.net
  * CreatedTime: 2023-06-27 01:11:1:11
  */
-package work.tangthinker.basic_dl.of_type.dao;
+package work.tangthinker.xml.basic_dl.of_type.dao;
 
 /**
  * @author shanliao

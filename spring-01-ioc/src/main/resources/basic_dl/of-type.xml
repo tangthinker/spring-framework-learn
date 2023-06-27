@@ -5,9 +5,9 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="demoDaoMySQL" class="work.tangthinker.basic_dl.of_type.dao.impl.DemoDaoMySQLImpl" />
-    <bean id="demoDaoOracle" class="work.tangthinker.basic_dl.of_type.dao.impl.DemoDaoOracleImpl" />
-    <bean id="demoDaoRedis" class="work.tangthinker.basic_dl.of_type.dao.impl.DemoDaoRedisImpl" />
+    <bean id="demoDaoMySQL" class="work.tangthinker.xml.basic_dl.of_type.dao.impl.DemoDaoMySQLImpl" />
+    <bean id="demoDaoOracle" class="work.tangthinker.xml.basic_dl.of_type.dao.impl.DemoDaoOracleImpl" />
+    <bean id="demoDaoRedis" class="work.tangthinker.xml.basic_dl.of_type.dao.impl.DemoDaoRedisImpl" />
 
 
 </beans>

@@ -4,6 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="work.tangthinker.bean.Person"/>
+    <bean id="person" class="work.tangthinker.xml.basic_di.by_set.bean.Person"/>
 
 </beans>

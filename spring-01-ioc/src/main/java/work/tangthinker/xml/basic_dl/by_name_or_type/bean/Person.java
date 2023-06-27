@@ -6,14 +6,14 @@
  * Email: tangyubin@haizhi.com
  * CreatedTime: 2023-06-25 18:42:18:42
  */
-package work.tangthinker.bean;
+package work.tangthinker.xml.basic_dl.by_name_or_type.bean;
 
 import lombok.Data;
 
 /**
  * @author Jon Snow
  * @since 2023/6/25 18:42
- * ClassPath: work.tangthinker.bean.Person
+ * ClassPath: work.tangthinker.basic_di.by_set.bean.Person
  * Description:
  */
 @Data

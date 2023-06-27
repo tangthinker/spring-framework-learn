@@ -5,9 +5,9 @@
  * Email: shanliao420@yeah.net
  * CreatedTime: 2023-06-27 01:13:1:13
  */
-package work.tangthinker.basic_dl.of_type.dao.impl;
+package work.tangthinker.xml.basic_dl.of_type.dao.impl;
 
-import work.tangthinker.basic_dl.of_type.dao.DemoDao;
+import work.tangthinker.xml.basic_dl.of_type.dao.DemoDao;
 
 /**
  * @author shanliao
@@ -15,9 +15,9 @@ import work.tangthinker.basic_dl.of_type.dao.DemoDao;
  * ClassPath: work.tangthinker.basic_dl.of_type.dao.impl.DemoDaoMySQLImpl
  * Description:
  */
-public class DemoDaoMySQLImpl implements DemoDao {
+public class DemoDaoRedisImpl implements DemoDao {
     @Override
     public String queryName() {
-        return "Mysql implementation";
+        return "Redis implementation";
     }
 }

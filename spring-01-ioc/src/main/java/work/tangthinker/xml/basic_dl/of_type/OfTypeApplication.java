@@ -5,11 +5,11 @@
  * Email: shanliao420@yeah.net
  * CreatedTime: 2023-06-27 01:12:1:12
  */
-package work.tangthinker.basic_dl.of_type;
+package work.tangthinker.xml.basic_dl.of_type;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import work.tangthinker.basic_dl.of_type.dao.DemoDao;
+import work.tangthinker.xml.basic_dl.of_type.dao.DemoDao;
 
 import java.util.Map;
 
