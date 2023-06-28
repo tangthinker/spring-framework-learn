@@ -27,8 +27,9 @@ public class QualifierCat {
     private String name;
 
     @Autowired
-    @Qualifier("shanliao")      // Qualifier不受Primary注解的干扰
-    private QualifierPerson master;
+    @Qualifier("administrator")      // Qualifier不受Primary注解的干扰
+    private QualifierPerson master;  // 如果没有设置Qualifier，则会优先查找与属性名匹配的bean
+                                     // 本例中会注入id为master的bean
 
 
 }

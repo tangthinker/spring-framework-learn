@@ -25,11 +25,20 @@ public class QualifierConfig {
 
 
     @Bean
-    @Primary
+    @Primary   //     Qualifier不受Primary注解的干扰
     public QualifierPerson master(){
         QualifierPerson person = new QualifierPerson();
         person.setName("master");
         person.setAge(22);
+        return person;
+    }
+
+
+    @Bean
+    public QualifierPerson administrator(){
+        QualifierPerson person = new QualifierPerson();
+        person.setName("administrator");
+        person.setAge(52);
         return person;
     }
 
