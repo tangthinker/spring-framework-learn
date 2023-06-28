@@ -1,30 +1,34 @@
 /*
- * ProjectName: spring-framework-projects
- * PackageName: work.tangthinker.annotation.autowired.bean
- * Description:
- * CreateBy: Jon Snow
- * Email: tangyubin@haizhi.com
- * CreatedTime: 2023-06-28 16:57:16:57
+ * ProjectName: spring-framework-learn
+ * PackageName: work.tangthinker.annotation.qualifier.bean
+ * CreateBy: shanliao
+ * Email: shanliao420@yeah.net
+ * CreatedTime: 2023-06-28 19:54:19:54
  */
 package work.tangthinker.annotation.qualifier.bean;
 
-import lombok.AllArgsConstructor;
-import lombok.ToString;
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 /**
- * @author Jon Snow
- * @since 2023/6/28 16:57
- * ClassPath: work.tangthinker.annotation.autowired.bean.AutowiredCat
+ * @author shanliao
+ * @since 2023/6/28 19:54
+ * ClassPath: work.tangthinker.annotation.qualifier.bean.QualifierCat
  * Description:
  */
-@ToString
-@AllArgsConstructor
+@Component
+@Data
 public class QualifierCat {
 
+    @Value("black")
     private String name;
 
+    @Autowired
+    @Qualifier("shanliao")      // Qualifier不受Primary注解的干扰
     private QualifierPerson master;
-
 
 
 }

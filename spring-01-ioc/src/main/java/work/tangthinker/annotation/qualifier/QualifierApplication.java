@@ -1,39 +1,28 @@
 /*
- * ProjectName: spring-framework-projects
- * PackageName: work.tangthinker.annotation.autowired
- * Description:
- * CreateBy: Jon Snow
- * Email: tangyubin@haizhi.com
- * CreatedTime: 2023-06-28 16:56:16:56
+ * ProjectName: spring-framework-learn
+ * PackageName: work.tangthinker.annotation.qualifier
+ * CreateBy: shanliao
+ * Email: shanliao420@yeah.net
+ * CreatedTime: 2023-06-28 19:53:19:53
  */
 package work.tangthinker.annotation.qualifier;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import work.tangthinker.annotation.qualifier.bean.QualifierCat;
-import work.tangthinker.annotation.qualifier.bean.QualifierPerson;
-
-import java.util.stream.Stream;
 
 /**
- * @author Jon Snow
- * @since 2023/6/28 16:56
- * ClassPath: work.tangthinker.annotation.autowired.AutowiredApplication
+ * @author shanliao
+ * @since 2023/6/28 19:53
+ * ClassPath: work.tangthinker.annotation.qualifier.QualifierApplication
  * Description:
  */
 public class QualifierApplication {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(QualifierConfiguration.class);
-        QualifierPerson person = context.getBean(QualifierPerson.class);
-        System.out.println(person);
-
+        ApplicationContext context = new AnnotationConfigApplicationContext(QualifierConfig.class);
         QualifierCat cat = context.getBean(QualifierCat.class);
         System.out.println(cat);
-
-        String[] beanDefinitionNames = context.getBeanDefinitionNames();
-        System.out.println("all bean definition name:");
-        Stream.of(beanDefinitionNames).forEach(System.out::println);
 
     }
 
