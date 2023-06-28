@@ -10,6 +10,7 @@ package work.tangthinker.annotation.qualifier.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -20,10 +21,11 @@ import org.springframework.stereotype.Component;
  * ClassPath: work.tangthinker.annotation.autowired.bean.AutowiredPerson
  * Description:
  */
-@Component("administrator")
+@Component("shanliao")
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
 public class QualifierPerson {
 
 

@@ -13,6 +13,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import work.tangthinker.annotation.qualifier.bean.QualifierCat;
 import work.tangthinker.annotation.qualifier.bean.QualifierPerson;
 
+import java.util.stream.Stream;
+
 /**
  * @author Jon Snow
  * @since 2023/6/28 16:56
@@ -28,6 +30,11 @@ public class QualifierApplication {
 
         QualifierCat cat = context.getBean(QualifierCat.class);
         System.out.println(cat);
+
+        String[] beanDefinitionNames = context.getBeanDefinitionNames();
+        System.out.println("all bean definition name:");
+        Stream.of(beanDefinitionNames).forEach(System.out::println);
+
     }
 
 

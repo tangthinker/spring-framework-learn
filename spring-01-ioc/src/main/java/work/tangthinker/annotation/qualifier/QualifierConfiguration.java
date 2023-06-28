@@ -24,22 +24,30 @@ import work.tangthinker.annotation.qualifier.bean.QualifierPerson;
  * Description:
  */
 @Configuration
-@ComponentScan("work.tangthinker.annotation.autowired.bean")
+@ComponentScan("work.tangthinker.annotation.qualifier.bean")
 public class QualifierConfiguration {
 
 
     @Bean
     @Primary
     public QualifierPerson master(){
-        return new QualifierPerson("king", 33);
+        QualifierPerson person = new QualifierPerson();
+        person.setName("master");
+        person.setAge(22);
+        return person;
     }
+
+    @Bean
+    public QualifierPerson administrator(){
+        return new QualifierPerson("administrator", 52);
+    }
+
     @Bean
     @Autowired
-    @Qualifier("master")
+    @Qualifier("shanliao")
     public QualifierCat qualifierCat(QualifierPerson person){
         return new QualifierCat("black", person);
     }
-
 
 
 
