@@ -13,7 +13,7 @@ import lombok.Data;
 /**
  * @author Jon Snow
  * @since 2023/6/25 18:42
- * ClassPath: work.tangthinker.basic_di.by_set.bean.Person
+ * ClassPath: work.tangthinker.basic_di.by_set.bean.AutowiredPerson
  * Description:
  */
 @Data
