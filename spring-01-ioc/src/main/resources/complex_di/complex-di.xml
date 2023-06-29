@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="blackCat" class="work.tangthinker.xml.complex_di.bean.ComplexDiCat" />
+
+
+    <bean id="complexDiPerson" class="work.tangthinker.xml.complex_di.bean.ComplexDiPerson">
+        <property name="names">
+            <array>
+                <value>shanliao</value>
+                <value>king</value>
+            </array>
+        </property>
+        <property name="phones">
+            <list>
+                <value>10010</value>
+                <value>10086</value>
+            </list>
+        </property>
+        <property name="pets">
+            <set>
+                <bean class="work.tangthinker.xml.complex_di.bean.ComplexDiCat" />
+                <ref bean="blackCat" />
+            </set>
+        </property>
+
+        <property name="events">
+            <map>
+                <entry key="8:00" value="getUp"/>
+                <entry key="9:00" value-ref="blackCat" />
+                <entry key="10:00" >
+                    <bean class="work.tangthinker.xml.complex_di.bean.ComplexDiCat" />
+                </entry>
+                <entry key="18:00" value="sleep" />
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="sex">male</prop>
+                <prop key="age">22</prop>
+                <prop key="tall">182</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
