@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditorStatisticsPro">
+    <option name="statistics">
+      <map>
+        <entry key="leetcode.cn">
+          <value>
+            <Statistics>
+              <option name="easy" value="155" />
+              <option name="hard" value="18" />
+              <option name="medium" value="130" />
+              <option name="questionTotal" value="3146" />
+              <option name="solvedTotal" value="303" />
+            </Statistics>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
