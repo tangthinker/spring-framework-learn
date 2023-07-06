@@ -8,6 +8,7 @@
  */
 package work.tangthinker.annotation.module_import.annotation;
 
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 import work.tangthinker.annotation.module_import.bean.Boss;
