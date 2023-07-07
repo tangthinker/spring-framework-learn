@@ -1,0 +1,4 @@
+redis:
+  username: shanliao
+  password: 333
+  url: localhost:6379
